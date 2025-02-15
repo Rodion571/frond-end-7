@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: start; 
+    background-color: #001124;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.container img {
+    max-width: 50%; 
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px; 
+    color: white; 
+    gap: 10px;
+}
+.row{
+    width: 250px;
+    height: 20px;
+}
+.knopka_login{
+    width: 100px;
+    height: 20px;
+    background-color: #015FC7;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.knopka_login:hover {
+    background-color: #f4f5f7;
+    color: black;
+}

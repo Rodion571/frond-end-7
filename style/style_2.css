@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: start; 
+    background-color: #001124;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.container img {
+    max-width: 50%;
+    margin-left: 50px; 
+    margin-top: 50px;  
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px; 
+    color: white; 
+    gap: 10px;
+}
+.row{
+    width: 250px;
+    height: 20px;
+}
+.knopka_submit {
+    width: 120px; 
+    height: 40px; 
+    background-color: #015FC7;
+    padding: 10px; 
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.knopka_submit:hover {
+    background-color: #f4f5f7;
+    color: black;
+}
