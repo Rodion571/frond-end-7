@@ -12,7 +12,6 @@
         <h2><span style="color: red;">*</span>Mandatory field</h2>
         <h2>Information</h2>
         <form>
-          
             <div class="form-row">
                 <div class="form-group">
                     <label for="intake-type">Intake Type</label>
@@ -21,7 +20,6 @@
                         <option value="NoReferal">NoReferal</option>
                     </select>
                 </div>
-            
                 <div class="form-group">
                     <label for="enrollment-initiation-date">Enrollment Initiation Date</label>
                     <input 
@@ -42,7 +40,6 @@
                         id="phone"
                         required>
                 </div>
-            
                 <div class="form-group">
                     <label for="application-category">Application Category</label>
                     <select id="application-category">
@@ -62,7 +59,6 @@
                         id="email"
                         required>
                 </div>
-            
                 <div class="form-group">
                     <label for="enrollment-submission-date">Enrollment Submission Date (Optional)</label>
                     <input 
@@ -75,13 +71,12 @@
 
             <div class="form-row">
                 <div class="form-group">
-                    <label for="application-registration">Application Registration (Optional)</label>
-                    <select id="application-registration">
+                    <label for="application-registration-1">Application Registration (Optional)</label>
+                    <select id="application-registration-1">
                         <option value="Referal">APP0000116</option>
                         <option value="NoReferal">APP0000117</option>
                     </select>
                 </div>
-            
                 <div class="form-group">
                     <label for="additional-info-date">Additional Information Requested Date (Optional)</label>
                     <input 
@@ -96,6 +91,7 @@
                 <input type="checkbox" id="additional-info-checkbox">
                 <label for="additional-info-checkbox">Purged</label>
             </div>
+
             <div class="form-row">
                 <div class="form-group">
                     <label for="remaining-days">Remaining Days Before Referral is Purged (Optional)</label>
@@ -106,7 +102,6 @@
                         id="remaining-days"
                         required>
                 </div>
-            
                 <div class="form-group">
                     <label for="exempt-paternity">Exempt from Paternity (Optional)</label>
                     <select id="exempt-paternity">
@@ -116,7 +111,7 @@
                 </div>
                 <div class="form-group">
                     <label for="fee-payment-date">Fee Payment Date (Optional)</label>
-                        <input 
+                    <input 
                         class="row" 
                         type="date"
                         id="fee-payment-date"
@@ -137,125 +132,113 @@
                 <div class="line"></div>
                 <h2>Maternity Information</h2>
                 <div class="form-row">
-                <div class="checkbox-group">
-                    <input type="checkbox" id="child-support-requested">
-                    <label for="child-support-requested">Are you requesting child support services for an unborn child?</label>
-                </div>
-            
-                <div class="form-group">
-                    <label for="biological-parent">Other known biological parent? (Optional)</label>
-                    <select id="biological-parent">
-                        <option value="Referal">Other known biological parent? (Optional)</option>
-                        <option value="NoReferal">NoOther known biological parent? (Optional)</option>
-                    </select>
-                </div>
-                <div class="line"></div>
-                
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="child-support-requested">
+                        <label for="child-support-requested">Are you requesting child support services for an unborn child?</label>
+                    </div>
                     <div class="form-group">
-                        <label for="application-registration">Case Category (select)</label>
-                        <select id="application-registration">
+                        <label for="biological-parent">Other known biological parent? (Optional)</label>
+                        <select id="biological-parent">
+                            <option value="Referal">Other known biological parent? (Optional)</option>
+                            <option value="NoReferal">NoOther known biological parent? (Optional)</option>
+                        </select>
+                    </div>
+                    <div class="line"></div>
+                    
+                    <div class="form-group">
+                        <label for="case-category">Case Category (select)</label>
+                        <select id="case-category">
                             <option value="Referal">Case Category (select)</option>
                             <option value="NoReferal">NoCase Category (select)</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="application-registration">IV-D Indicator*</label>
-                        <select id="application-registration">
+                        <label for="ivd-indicator">IV-D Indicator*</label>
+                        <select id="ivd-indicator">
                             <option value="Referal">IV-D Indicator*</option>
                             <option value="NoReferal">NoIV-D Indicator*</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="application-registration">Arrears Only Indicator (Optional)</label>
-                        <select id="application-registration">
+                        <label for="arrears-indicator">Arrears Only Indicator (Optional)</label>
+                        <select id="arrears-indicator">
                             <option value="Referal">None</option>
                             <option value="NoReferal">Info</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="application-registration">Intergovernmental Case Category (Optional)</label>
-                        <select id="application-registration">
+                        <label for="intergovernmental-case-category">Intergovernmental Case Category (Optional)</label>
+                        <select id="intergovernmental-case-category">
                             <option value="Referal">None</option>
                             <option value="NoReferal">Info</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="application-registration">Assigned County of Ownership (Optional)</label>
-                        <select id="application-registration">
+                        <label for="assigned-county">Assigned County of Ownership (Optional)</label>
+                        <select id="assigned-county">
                             <option value="Referal">None</option>
                             <option value="NoReferal">Info</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="application-registration">Intergovernmental Case Type (Optional)</label>
-                        <select id="application-registration">
+                        <label for="intergovernmental-case-type">Intergovernmental Case Type (Optional)</label>
+                        <select id="intergovernmental-case-type">
                             <option value="Referal">None</option>
                             <option value="NoReferal">Info</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="application-registration">Intergovermental Case Status (details)</label>
-                        <select id="application-registration">
+                        <label for="intergovernmental-case-status">Intergovernmental Case Status (details)</label>
+                        <select id="intergovernmental-case-status">
                             <option value="Referal">None</option>
                             <option value="NoReferal">Info</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="search">Case Number</label>
-                        <input type="search"
-                        id="search">
+                        <label for="case-number">Case Number</label>
+                        <input type="text" id="case-number">
                     </div>
                     <div class="form-group">
-                        <label for="application-registration">Special Handling Indicator for Applicant (Optional)</label>
-                        <select id="application-registration">
+                        <label for="special-handling-applicant">Special Handling Indicator for Applicant (Optional)</label>
+                        <select id="special-handling-applicant">
                             <option value="Referal">None</option>
                             <option value="NoReferal">Info</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="search">Referral Number</label>
-                        <input type="search"
-                        id="search">
+                        <label for="referral-number">Referral Number</label>
+                        <input type="text" id="referral-number">
                     </div>
                     <div class="form-group">
-                        <label for="application-registration">Special Handling Indicator for Other Parent
-                            (Optional)</label>
-                        <select id="application-registration">
+                        <label for="special-handling-other-parent">Special Handling Indicator for Other Parent (Optional)</label>
+                        <select id="special-handling-other-parent">
                             <option value="Referal">None</option>
                             <option value="NoReferal">Info</option>
                         </select>
                     </div>
                     <div class="line"></div>
             
-            
-                <div class="form-group">
-                    <label for="search">Enrollment Taken by User </label>
-                    <input type="search"
-                    placeholder="Search Input"
-                    id="search">
+                    <div class="form-group">
+                        <label for="enrollment-taken-by-user">Enrollment Taken by User </label>
+                        <input type="text" id="enrollment-taken-by-user">
+                    </div>
+                    <div class="form-group">
+                        <label for="intake-supervisor">Intake Supervisor (Optional)</label>
+                        <input type="text" id="intake-supervisor">
+                    </div>
+                    <div class="form-group">
+                        <label for="worker">Worker (Optional) </label>
+                        <input type="text" id="worker">
+                    </div>
+                    <div class="form-group">
+                        <label for="owner">Owner (Optional)</label>
+                        <input type="text" id="owner">
+                    </div>
+                    <div class="knopka">
+                        <a href="./index.html" class="knopka_next" target="_blank">Next</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="search">Intake Supervisor (Optional)</label>
-                    <input type="search"
-                    id="search">
-                </div>
-                <div class="form-group">
-                    <label for="search">Worker (Optional) </label>
-                    <input type="search"
-                    placeholder="Search Input"
-                    id="search">
-                </div>
-                <div class="form-group">
-                    <label for="search">Owner (Optional)</label>
-                    <input type="search"
-                    id="search">
-                </div>
-                <div class="knopka">
-                    <a href="./index.html" class="knopka_next" target="_blank">Next</a>
-                </div>
+            </form>
         </div>
-            
-        </form>
-    </div>
-</body>
+    </body>
 </html>
